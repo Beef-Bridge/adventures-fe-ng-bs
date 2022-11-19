@@ -10,13 +10,22 @@ import { HIKES } from './mock-hikes-list';
 export class AppComponent implements OnInit {
   title = 'adventures-fe-ng-bs';
   hikeList: Hike[] = HIKES;
+  hikeSelected: Hike | undefined;
 
   ngOnInit(): void {
     console.table(this.hikeList);
   }
 
-  selectHike(event: MouseEvent) {
-    const index: number = +(event.target as HTMLInputElement).value;
-    console.log(`On a cliqué sur la rando ${this.hikeList[index].title}`);
+  selectHike(hikeId: string) {
+    const hike: Hike | undefined = this.hikeList.find(
+      (hike) => hike.id == +hikeId
+    );
+    if (hike) {
+      console.log(`On a demandé le pokémon ${hike.title}`);
+      this.hikeSelected = hike;
+    } else {
+      console.log(`On a demandé un pokémon qui n'existe pas`);
+      this.hikeSelected = hike;
+    }
   }
 }
