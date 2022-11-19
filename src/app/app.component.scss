@@ -1,2 +1,142 @@
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
+#latest-hikes {
+  section {
+    overflow: hidden;
+    padding-left: 100px;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  section .sidenotes {
+    position: absolute;
+    left: 10px;
+    top: 22px;
+    width: 180px;
+  }
+
+  .hikes-list {
+    list-style: none;
+  }
+
+  .hikes-list .sidenotes {
+    position: absolute;
+    top: auto;
+  }
+
+  a.category {
+    text-decoration: none;
+    color: #ccc;
+    background: #333;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  a.category:hover {
+    color: #fff;
+  }
+
+  .hikes-list li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hikes-list li span.date {
+    float: left;
+    width: 110px;
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  .hikes-list .sidenotes,
+  nav a {
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .massif {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .chartreuse {
+    color: #0d6efd;
+  }
+
+  .vercors {
+    color: #6c757d;
+  }
+
+  .belledonne {
+    color: #198754;
+  }
+
+  .taillefer {
+    color: #dc3545;
+  }
+
+  .beaufortain {
+    color: #ffc107;
+  }
+
+  .chablais {
+    color: #000000;
+  }
+
+  .etranger {
+    color: #0dcaf0;
+  }
+}
+
+#statistical-review {
+  .card {
+    margin-bottom: 24px;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 500;
+
+      span {
+        color: #899bbd;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .card-content {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      .card-icon {
+        color: #899bbd;
+        font-size: 32px;
+        line-height: 0;
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        align-items: center !important;
+        display: flex !important;
+      }
+
+      .card-indicator {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 64px;
+
+        h6 {
+          font-size: 28px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
