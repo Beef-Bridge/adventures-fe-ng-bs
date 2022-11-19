@@ -1,11 +1,21 @@
-<h1>Welcome to {{ title }}!</h1>
+<h1 class="center">Liste des randonnées</h1>
 
-<h2>Liste des randonnées</h2>
-
-<input #input (keyup.enter)="selectHike(input.value)" type="number" />
-<p *ngIf="hikeSelected">On a sélectionné la rando : {{ hikeSelected.title }}</p>
-<p *ngIf="!hikeSelected">Aucune rando n'a été trouvée.</p>
-
-<p *ngFor="let hike of hikeList">
-  {{ hike.title }}
-</p>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let hike of hikeList" class="col m4 s6">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img [src]="hike.picture" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ hike.title }}</p>
+            <p>
+              <small>{{ hike.date_hike }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
