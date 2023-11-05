@@ -1,0 +1,148 @@
+{
+  "massifs": [
+    {
+      "id": 1,
+      "name": "Aiguilles Rouges",
+      "zone_geographique": 1
+    },
+    {
+      "id": 2,
+      "name": "Alpes grées (ou Alpes graies)",
+      "zone_geographique": 1
+    },
+    {
+      "id": 3,
+      "name": "Bauges",
+      "zone_geographique": 1
+    },
+    {
+      "id": 4,
+      "name": "Beaufortain",
+      "zone_geographique": 1
+    },
+    {
+      "id": 5,
+      "name": "Belledonne",
+      "zone_geographique": 1
+    },
+    {
+      "id": 6,
+      "name": "Bornes - Aravis",
+      "zone_geographique": 1
+    },
+    {
+      "id": 7,
+      "name": "Cerces-Thabor",
+      "zone_geographique": 1
+    },
+    {
+      "id": 8,
+      "name": "Chablais",
+      "zone_geographique": 1
+    },
+    {
+      "id": 9,
+      "name": "Chartreuse",
+      "zone_geographique": 1
+    },
+    {
+      "id": 10,
+      "name": "Dévoluy",
+      "zone_geographique": 1
+    },
+    {
+      "id": 11,
+      "name": "Ecrins",
+      "zone_geographique": 1
+    },
+    {
+      "id": 12,
+      "name": "Encombres",
+      "zone_geographique": 1
+    },
+    {
+      "id": 13,
+      "name": "Grandes Rousses / Arves",
+      "zone_geographique": 1
+    },
+    {
+      "id": 14,
+      "name": "Haut-Giffre",
+      "zone_geographique": 1
+    },
+    {
+      "id": 15,
+      "name": "Encombres",
+      "zone_geographique": 1
+    },
+    {
+      "id": 16,
+      "name": "Lauzière",
+      "zone_geographique": 1
+    },
+    {
+      "id": 17,
+      "name": "Mont Blanc",
+      "zone_geographique": 1
+    },
+    {
+      "id": 18,
+      "name": "Mont Cenis",
+      "zone_geographique": 1
+    },
+    {
+      "id": 19,
+      "name": "Platé - Fiz",
+      "zone_geographique": 1
+    },
+    {
+      "id": 20,
+      "name": "Taillefer",
+      "zone_geographique": 1
+    },
+    {
+      "id": 21,
+      "name": "Vanoise",
+      "zone_geographique": 1
+    },
+    {
+      "id": 22,
+      "name": "Vercors",
+      "zone_geographique": 1
+    }
+  ],
+  "zone_geographique": [
+    {
+      "id": 1,
+      "name": "Alpes du Nord"
+    },
+    {
+      "id": 2,
+      "name": "Alpes du Sud"
+    },
+    {
+      "id": 3,
+      "name": "Jura"
+    },
+    {
+      "id": 4,
+      "name": "Massif Central"
+    },
+    {
+      "id": 5,
+      "name": "Pyrénées"
+    },
+    {
+      "id": 6,
+      "name": "Vosges"
+    },
+    {
+      "id": 7,
+      "name": "Europe"
+    },
+    {
+      "id": 8,
+      "name": "Autres"
+    }
+  ]
+}
