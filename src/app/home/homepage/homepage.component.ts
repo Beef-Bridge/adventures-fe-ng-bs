@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {
-  faMountain,
-  faPlane,
-  faLocationDot,
-} from '@fortawesome/free-solid-svg-icons';
+import { faMountain, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-homepage',
