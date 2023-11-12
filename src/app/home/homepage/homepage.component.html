@@ -3,7 +3,22 @@
     <h2>Toutes les Randonnéennées classées par date</h2>
 
     <div id="journey-list">
-      <ul class="">
+      <ul *ngFor="let hike of hikeList">
+        <span class="date">{{ hike.doneAt }}</span>
+        <a
+          routerLink="/Randonnée/Raquettes"
+          class="badge badge-secondary category"
+          >{{ hike.activityType }}</a
+        >
+        &nbsp;
+        <span class="d-inline-block mb-2 massif vercors">
+          <fa-icon [icon]="faMountain"></fa-icon> {{ hike.massif }}
+        </span>
+        &nbsp;
+        <a href="">{{ hike.title }}</a>
+      </ul>
+
+      <!-- <ul class="">
         <li class="sidenotes">2022</li>
         <li>
           <span class="date">26 fev.</span>
@@ -304,7 +319,7 @@
           &nbsp;
           <a href="">Plate-forme d'observation de Rampestreken</a>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 
