@@ -3,146 +3,112 @@
     {
       "id": 1,
       "name": "Aiguilles Rouges",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 2,
       "name": "Alpes grées (ou Alpes graies)",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 3,
       "name": "Bauges",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 4,
       "name": "Beaufortain",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 5,
       "name": "Belledonne",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 6,
       "name": "Bornes - Aravis",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 7,
       "name": "Cerces-Thabor",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 8,
       "name": "Chablais",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 9,
       "name": "Chartreuse",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 10,
       "name": "Dévoluy",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 11,
       "name": "Ecrins",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 12,
       "name": "Encombres",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 13,
       "name": "Grandes Rousses / Arves",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 14,
       "name": "Haut-Giffre",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 15,
       "name": "Encombres",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 16,
       "name": "Lauzière",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 17,
       "name": "Mont Blanc",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 18,
       "name": "Mont Cenis",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 19,
       "name": "Platé - Fiz",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 20,
       "name": "Taillefer",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 21,
       "name": "Vanoise",
-      "geographicalZone": 1
+      "geographicalZone": "Alpes du Nord"
     },
     {
       "id": 22,
       "name": "Vercors",
-      "geographicalZone": 1
-    }
-  ],
-  "geographicalZone": [
-    {
-      "id": 1,
-      "name": "Alpes du Nord"
-    },
-    {
-      "id": 2,
-      "name": "Alpes du Sud"
-    },
-    {
-      "id": 3,
-      "name": "Jura"
-    },
-    {
-      "id": 4,
-      "name": "Massif Central"
-    },
-    {
-      "id": 5,
-      "name": "Pyrénées"
-    },
-    {
-      "id": 6,
-      "name": "Vosges"
-    },
-    {
-      "id": 7,
-      "name": "Europe"
-    },
-    {
-      "id": 8,
-      "name": "Autres"
+      "geographicalZone": "Alpes du Nord"
     }
   ],
   "hikes": [
@@ -150,77 +116,121 @@
       "id": 1,
       "title": "Sortie nocturne dans les Coulmes",
       "doneAt": "2022-02-26",
-      "massif": 22,
+      "massif": {
+        "id": 22,
+        "name": "Vercors",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Raquettes"
     },
     {
       "id": 2,
       "title": "L'Ecoutoux",
       "doneAt": "2022-01-08",
-      "massif": 9,
+      "massif": {
+        "id": 9,
+        "name": "Chartreuse",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 3,
       "title": "Le Rocher du Vent avec détour par le tunnel",
       "doneAt": "2022-09-13",
-      "massif": 4,
+      "massif": {
+        "id": 4,
+        "name": "Beaufortain",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 4,
       "title": "Boucle Emeindras du dessus et Col de Emeindras",
       "doneAt": "2020-01-15",
-      "massif": 9,
+      "massif": {
+        "id": 9,
+        "name": "Chartreuse",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 5,
       "title": "Boucle 45e parallèle et cabane de Carette depuis golf de Correncon",
       "doneAt": "2022-01-09",
-      "massif": 22,
+      "massif": {
+        "id": 22,
+        "name": "Vercors",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 6,
       "title": "La croix de Chamrousse",
       "doneAt": "2021-08-08",
-      "massif": 5,
+      "massif": {
+        "id": 5,
+        "name": "Belledonne",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 7,
       "title": "Le Col de l'Aple et le sommet du Pinet",
       "doneAt": "2022-11-12",
-      "massif": 9,
+      "massif": {
+        "id": 9,
+        "name": "Chartreuse",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 8,
       "title": "La dent du Loup par le plateau du Sornin",
       "doneAt": "2022-03-27",
-      "massif": 22,
+      "massif": {
+        "id": 22,
+        "name": "Vercors",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 9,
       "title": "Roche Parstire depuis le Col du Pré",
       "doneAt": "2022-01-22",
-      "massif": 4,
+      "massif": {
+        "id": 4,
+        "name": "Beaufortain",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Raquettes"
     },
     {
       "id": 10,
       "title": "Le Moucherotte et le Sommet des Cimes",
       "doneAt": "2021-09-26",
-      "massif": 22,
+      "massif": {
+        "id": 22,
+        "name": "Vercors",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     },
     {
       "id": 11,
       "title": "Boucle la Pierre Percée",
       "doneAt": "2022-05-20",
-      "massif": 20,
+      "massif": {
+        "id": 20,
+        "name": "Taillefer",
+        "geographicalZone": "Alpes du Nord"
+      },
       "activityType": "Randonnée"
     }
   ]

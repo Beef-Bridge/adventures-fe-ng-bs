@@ -1,9 +1,8 @@
 import { ActivityType } from '../enums/activity-type.enums';
 import { HikeI } from '../interfaces/hike-i';
-import { MassifI } from '../interfaces/massif-i';
+import { Massif } from './massif';
 
 export class Hike implements HikeI {
-
   /*
    * Rappel :
    * "!" propriété obligatoire
@@ -12,8 +11,8 @@ export class Hike implements HikeI {
 
   id!: number;
   title!: string;
-  doneAt!: string;
-  massif!: MassifI;
+  doneAt!: Date;
+  massif!: Massif;
   activityType: ActivityType = ActivityType.RANDONNEE;
 
   constructor(fields?: Partial<Hike>) {
