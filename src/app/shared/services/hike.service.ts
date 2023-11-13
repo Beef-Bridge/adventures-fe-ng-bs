@@ -15,9 +15,6 @@ export class HikeService {
       .get<Hike[]>(`${environment.urlApi}/hikes`)
       .pipe(map((data: Hike[]) => data.map((hike) => new Hike(hike))));
 
-    // @todo: regrouper les randos par années et formatter le jours et mois avec DayJs comme sur la maquette !
-    console.log('liste rando hikeService : ', hikeList);
-
     return hikeList;
   };
 }
