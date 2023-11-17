@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMountain, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { Observable, map } from 'rxjs';
+import { HikeI } from 'src/app/shared/interfaces/hike-i';
 import { Hike } from 'src/app/shared/models/hike';
+import { HikingYear } from 'src/app/shared/models/hikingYear';
 import { HikeService } from 'src/app/shared/services/hike.service';
+import { HikingYearService } from 'src/app/shared/services/hiking-year.service';
 
 @Component({
   selector: 'app-homepage',
@@ -14,14 +18,28 @@ export class HomepageComponent implements OnInit {
   faMountain = faMountain;
   faLocationDot = faLocationDot;
 
-  public hikeList: Hike[] = [];
+  public hikingYearList: HikingYear[] = [];
 
-  constructor(private _hikeService: HikeService) {}
+  hikeList$!: Observable<HikeI[]>;
+
+  constructor(
+    private _hikingYearService: HikingYearService,
+    private _hikeService: HikeService
+  ) {}
 
   ngOnInit(): void {
-    this._hikeService.list$().subscribe((hikes: Hike[]) => {
-      console.table(hikes);
-      this.hikeList = hikes;
-    });
+    //   this._hikingYearService
+    //     .list$()
+    //     .subscribe((hikingYearListing: HikingYear[]) => {
+    //       this.hikingYearList = hikingYearListing;
+    //     });
+
+    //   this._hikeService.list$().subscribe(
+    //     (hikeListing: Hike[]) => {
+    //       this.hikeList = hikeListing;
+    //     }
+    //   );
+
+    this.hikeList$ = this._hikeService.sortHikeListByDateDesc();
   }
 }

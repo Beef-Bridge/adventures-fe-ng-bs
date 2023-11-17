@@ -1,21 +1,14 @@
 <div class="row">
   <div class="col-md-8">
-    <h2>Toutes les Randonnéennées classées par date</h2>
+    <h2>Toutes les randonnées classées par date</h2>
 
     <div id="journey-list">
-      <ul *ngFor="let hike of hikeList">
-        <span class="date">{{ hike.doneAt }}</span>
-        <a
-          routerLink="/Randonnée/Raquettes"
-          class="badge badge-secondary category"
-          >{{ hike.activityType }}</a
-        >
-        &nbsp;
-        <span class="d-inline-block mb-2 massif vercors">
-          <fa-icon [icon]="faMountain"></fa-icon> {{ hike.massif.name }}
-        </span>
-        &nbsp;
-        <a href="">{{ hike.title }}</a>
+      <ul *ngFor="let hikingYear of hikingYearList">
+        <li>{{ hikingYear.year }}</li>
+      </ul>
+
+      <ul *ngFor="let hike of hikeList$ | async">
+        <li>{{ hike.doneAt }} - {{ hike.title }}</li>
       </ul>
 
       <!-- <ul class="">
