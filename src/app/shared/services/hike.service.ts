@@ -13,20 +13,12 @@ export class HikeService {
   /**
    * Convention de nommage "fonctions fléchées" (ou Arrow function) :
    *
-   * list$              : nom de la fonction (avec le '$' pour indiquer qu'elle retourne un observable)
+   * getHikeList$       : nom de la fonction (avec le '$' pour indiquer qu'elle retourne un observable)
    * = ():              : la liste des paramètres que recoit la fonction (séparée par une virgule)
    * Observable<Hike[]> : le typage de retour de la fonction
    * =>                 : la flèche qui marque la séparation entre les paramètres et l’implémentation de la fonction
    * { ... }            : Le corps de la fonction entre des accolades.
    */
-  public list$ = (): Observable<Hike[]> => {
-    let hikeList = this._http
-      .get<Hike[]>(`${environment.urlApi}/hikes`)
-      .pipe(map((data: Hike[]) => data.map((hike) => new Hike(hike))));
-
-    return hikeList;
-  }
-
   public getHikeList$ = (): Observable<Hike[]> => {
     return this._http.get<Hike[]>(`${environment.urlApi}/hikes`).pipe(
       tap((response: any) => console.table(response)),
