@@ -3,26 +3,22 @@ div #journey-list {
   padding-left: 62px;
   padding-top: 20px;
   position: relative;
-
-  .sidenotes {
-    position: absolute;
-    left: 2px;
-    width: 60px;
-  }
 }
 
 ul {
   list-style: none;
   padding-left: 1rem;
 
-  .sidenotes {
+  li.journey-year {
     position: absolute;
     top: auto;
     letter-spacing: 1px;
     font-weight: bold;
+    left: 2px;
+    width: 60px;
   }
 
-  li {
+  li.journey-item {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
