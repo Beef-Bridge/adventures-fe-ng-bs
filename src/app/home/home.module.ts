@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
+import { HikeModule } from '../hike/hike/hike.module';
 
 @NgModule({
   declarations: [HomepageComponent, HomepageSidebarComponent],
@@ -14,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
     RouterModule,
     FontAwesomeModule,
     SharedModule,
+    HikeModule,
     HttpClientModule,
   ],
 })
