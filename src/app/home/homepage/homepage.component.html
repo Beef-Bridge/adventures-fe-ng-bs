@@ -6,7 +6,7 @@
       <ul *ngFor="let hikingYear of hikingYearList$ | async">
         <li class="journey-year">{{ hikingYear.year }}</li>
         <li class="journey-item" *ngFor="let hike of hikingYear.hikes">
-          <span class="date">{{ hike.doneAt }}</span>
+          <span class="date">{{ hike.doneAt | dateDdMmm }}</span>
           <a
             routerLink="/Randonnée/Raquettes"
             class="badge badge-secondary category"

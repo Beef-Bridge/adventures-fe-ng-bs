@@ -5,9 +5,16 @@ import { HomepageSidebarComponent } from './homepage-sidebar/homepage-sidebar.co
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [HomepageComponent, HomepageSidebarComponent],
-  imports: [CommonModule, RouterModule, FontAwesomeModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FontAwesomeModule,
+    SharedModule,
+    HttpClientModule,
+  ],
 })
 export class HomeModule {}

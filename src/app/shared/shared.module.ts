@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { DateDdMmmPipe } from './pipes/date-dd-mmm.pipe';
 
 @NgModule({
   declarations: [
@@ -12,8 +13,9 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     HeaderComponent,
     NavbarComponent,
+    DateDdMmmPipe,
   ],
   imports: [CommonModule, RouterModule],
-  exports: [TemplateComponent],
+  exports: [TemplateComponent, DateDdMmmPipe],
 })
 export class SharedModule {}
