@@ -6,7 +6,7 @@
           <td>{{ hike.title }}</td>
           <td>{{ hike.massif.name }}</td>
           <td>{{ hike.activityType }}</td>
-          <td>{{ hike.doneAt }}</td>
+          <td>{{ hike.doneAt | dateDayJs }}</td>
         </tr>
       </app-table>
     </section>
