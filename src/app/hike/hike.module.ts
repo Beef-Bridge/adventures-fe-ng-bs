@@ -5,6 +5,7 @@ import { ListHikeComponent } from './list-hike/list-hike.component';
 import { AddHikeComponent } from './add-hike/add-hike.component';
 import { EditHikeComponent } from './edit-hike/edit-hike.component';
 import { DetailHikeComponent } from './detail-hike/detail-hike.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { DetailHikeComponent } from './detail-hike/detail-hike.component';
     AddHikeComponent,
     EditHikeComponent,
   ],
-  imports: [CommonModule, HikeRoutingModule],
+  imports: [CommonModule, HikeRoutingModule, SharedModule],
 })
 export class HikeModule {}
