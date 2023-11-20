@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DetailHikeComponent } from './detail-hike/detail-hike.component';
+import { ListHikeComponent } from './list-hike/list-hike.component';
+import { AddHikeComponent } from './add-hike/add-hike.component';
+import { EditHikeComponent } from './edit-hike/edit-hike.component';
 
 const hikeRoutes: Routes = [
+  { path: 'randonnees', component: ListHikeComponent },
   { path: 'randonnee/:id', component: DetailHikeComponent },
-  // { path: 'randonnee/add', component: AddHikeComponent }
-  // { path: 'randonnee/edit/:id', component: EditHikeComponent },
+  { path: 'randonnee/ajouter', component: AddHikeComponent },
+  { path: 'randonnee/editer/:id', component: EditHikeComponent },
 ];
 
 @NgModule({
