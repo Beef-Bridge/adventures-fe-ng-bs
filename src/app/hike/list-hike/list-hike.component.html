@@ -1,1 +1,14 @@
-<p>list-hike works!</p>
+<div class="row">
+  <div class="col-md-12">
+    <section id="hike-list">
+      <app-table [headers]="hikesHeaders">
+        <tr *ngFor="let hike of hikeList$ | async">
+          <td>{{ hike.title }}</td>
+          <td>{{ hike.massif.name }}</td>
+          <td>{{ hike.activityType }}</td>
+          <td>{{ hike.doneAt }}</td>
+        </tr>
+      </app-table>
+    </section>
+  </div>
+</div>
