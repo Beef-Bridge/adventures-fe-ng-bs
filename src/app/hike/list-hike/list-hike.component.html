@@ -3,7 +3,7 @@
     <section id="hike-list">
       <app-table [headers]="hikesHeaders">
         <tr *ngFor="let hike of hikeList$ | async">
-          <td>{{ hike.title }}</td>
+          <td><a (click)="goToHike(hike)" class="link-primary">{{ hike.title }}</a></td>
           <td>{{ hike.massif.name }}</td>
           <td>{{ hike.activityType }}</td>
           <td>{{ hike.doneAt | dateDayJs }}</td>

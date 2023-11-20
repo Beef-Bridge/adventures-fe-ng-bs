@@ -18,4 +18,8 @@ export class ListHikeComponent implements OnInit {
   public ngOnInit(): void {
     this.hikeList$ = this._hikeService.sortHikeListByDateDesc();
   }
+
+  public goToHike = (hike: Hike) => {
+    this._router.navigate(["/randonnee", hike.id])
+  }
 }
